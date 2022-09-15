@@ -1,4 +1,4 @@
-@include('master.header')
+@include('layout.header')
 
 
 <h1>{{ $name }}</h1>
