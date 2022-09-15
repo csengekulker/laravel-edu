@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Test;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\CarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,3 +42,8 @@ Route::get('/products', function () {
 Route::get('/new', [ StudentController::class, 'newStudent']);
 
 Route::post('/students', [ StudentController::class, 'submitStudent']);
+
+
+Route::get('/newcar', [ CarController::class, 'newCar']);
+
+Route::post('/cars', [ CarController::class, 'submitCar']);
