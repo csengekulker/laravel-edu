@@ -1,5 +1,0 @@
-@include('layout.header')
-
-
-<h1>{{ $name }}</h1>
-<h1>{{ $email }}</h1>

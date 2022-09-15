@@ -1,3 +1,4 @@
+@extends('layout.master')
 @include('layout.header')
 
 <h1>Admin About View</h1>
@@ -6,3 +7,5 @@
 
     <h3>{{$name}}</h3>
 @endforeach
+
+@include('layout.footer')
