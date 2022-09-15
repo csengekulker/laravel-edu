@@ -7,7 +7,9 @@
     <title>@yield('title')</title>
 </head>
 <body>
-    <h1>Master view</h1>
+
     @yield('content')
+
+    
 </body>
 </html>

@@ -33,3 +33,7 @@ Route::get('/admin/about', function () {
     );
 });
 
+
+Route::get('/products', function () {
+    return view('templates.products');
+});
