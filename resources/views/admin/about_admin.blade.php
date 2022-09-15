@@ -1,11 +1,8 @@
 @extends('layout.master')
-@include('layout.header')
+@section('title', 'Admin about')
 
-<h1>Admin About View</h1>
+@section('content')
+    @include('layout.header')
+    <h2>Admin about view</h2>
+@endsection
 
-@foreach ( $names as $name ) 
-
-    <h3>{{$name}}</h3>
-@endforeach
-
-@include('layout.footer')
