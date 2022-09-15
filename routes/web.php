@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Test;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\StudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,7 +34,10 @@ Route::get('/admin/about', function () {
     );
 });
 
-
 Route::get('/products', function () {
     return view('templates.products');
 });
+
+Route::get('/new', [ StudentController::class, 'newStudent']);
+
+Route::post('/students', [ StudentController::class, 'submitStudent']);
