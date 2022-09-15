@@ -23,3 +23,13 @@ Route::get('/test', [ Test::class, 'index']);
 
 
 Route::get('/about', [ ServiceController::class, 'index']);
+
+Route::get('/admin/about', function () {
+    return view(
+        'admin/about_admin', 
+        [ 'names' => [
+            "Bela", "Pista", "John", "Doe"
+        ]]
+    );
+});
+
