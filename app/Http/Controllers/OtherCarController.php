@@ -39,4 +39,10 @@ class OtherCarController extends Controller
         echo "<pre>";
         print_r($result);
     }
+
+    public function update() {
+        DB::table('cars')->where('id', 3)->update([
+            "brand" => "Opel"
+        ]);
+    }
 }

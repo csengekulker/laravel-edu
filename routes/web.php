@@ -53,3 +53,5 @@ Route::get("/insertcar", [ OtherCarController::class, 'insert_all']);
 
 
 Route::get("/selectcar", [ OtherCarController::class, 'select_all']);
+
+Route::get('/updatecar', [ OtherCarController::class, 'update']);
