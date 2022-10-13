@@ -45,4 +45,19 @@ class OtherCarController extends Controller
             "brand" => "Opel"
         ]);
     }
+
+    public function update_or_insert() {
+        DB::table('cars')->updateOrInsert(
+        [ //this is the base of comparison
+            "brand" => "ilyentutinincs",
+            "productyear" => "1987",
+            "color_id" => 3
+        ],
+        
+        [ // this is to be inserted if no match, above record updated if match
+            "brand" => "SosekOpel",
+            "productyear" => "2002",
+            "color_id" => 1
+        ]);
+    }
 }
