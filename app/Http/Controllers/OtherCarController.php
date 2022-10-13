@@ -29,5 +29,14 @@ class OtherCarController extends Controller
 
         echo "<pre>";
         print_r($result);
+
+        $result = DB::table('cars')->select(
+            "cars.productyear as Evjarat",
+            'colors.color as Szin'
+        )->join("colors", "cars.color_id", "=", "colors.id")
+        ->where("cars.brand", "=", "Szuszka")->get();
+
+        echo "<pre>";
+        print_r($result);
     }
 }
