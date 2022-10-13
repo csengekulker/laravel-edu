@@ -57,3 +57,5 @@ Route::get("/selectcar", [ OtherCarController::class, 'select_all']);
 Route::get('/updatecar', [ OtherCarController::class, 'update']);
 
 route::get('/upin', [ OtherCarController::class, 'update_or_insert']);
+
+Route::get('/del', [ OtherCarController::class, 'delete']);

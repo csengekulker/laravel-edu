@@ -60,4 +60,9 @@ class OtherCarController extends Controller
             "color_id" => 1
         ]);
     }
+
+    public function delete() {
+        // reset id increment
+        DB::table('cars')->truncate();
+    }
 }
