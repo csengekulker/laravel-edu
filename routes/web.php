@@ -49,8 +49,9 @@ Route::get('/newcar', [ CarController::class, 'newCar']);
 
 Route::post('/cars', [ CarController::class, 'submitCar']);
 
-Route::get("/insertcar", [ OtherCarController::class, 'insert_all']);
 
+// 2022.10.13
+Route::get("/insertcar", [ OtherCarController::class, 'insert_all']);
 
 Route::get("/selectcar", [ OtherCarController::class, 'select_all']);
 
@@ -59,3 +60,5 @@ Route::get('/updatecar', [ OtherCarController::class, 'update']);
 route::get('/upin', [ OtherCarController::class, 'update_or_insert']);
 
 Route::get('/del', [ OtherCarController::class, 'delete']);
+
+// 2022.10.20
