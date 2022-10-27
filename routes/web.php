@@ -62,3 +62,7 @@ route::get('/upin', [ OtherCarController::class, 'update_or_insert']);
 Route::get('/del', [ OtherCarController::class, 'delete']);
 
 // 2022.10.20
+
+// 2022.10.27
+
+Route::get('/diakok', [ StudentController::class, 'getStudent']);
